@@ -1,9 +1,10 @@
+/*   ---IMPORTS---   */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,400;1,700&display=swap');
 
 /*   ---RESET---   */
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -50,9 +51,11 @@ body{
     border: 2px solid rgb(22, 190, 179);
     border-radius: 15px;
     padding: 5px;
+    transition: color 0.3s ease-out, border 0.3s ease-out;
 }
 .aspecto-boton:hover{
     color: white;
+    border: 2px solid white;
 }
 
 /*   ---HEADER---   */
@@ -82,12 +85,13 @@ header nav ul{
 header nav ul li{
     margin: 5px;
 }
-header nav ul li a {
+header nav ul li a{
     text-decoration: none;
     color: white;
+    transition: color 0.5s ease;
 }
 header nav ul li a:hover{
-    color:rgb(22, 190, 179);
+    color: rgb(22, 190, 179);
 }
 
 /*      ------INDEX------      */
@@ -145,6 +149,10 @@ header nav ul li a:hover{
     border-radius: 30px;
     height: 87%;
     width: 90%;
+    transition: 1s ease;
+}
+.grid-container div:hover{
+    transform: scale(1.05);
 }
 .grid-container div img{
     width: 200px;
@@ -212,7 +220,7 @@ header nav ul li a:hover{
 }
 .portfolio div h3{
     font-size: 30px;
-    padding: 0 15px 10px 20px; 
+    padding: 0 15px 10px 20px;
     margin-bottom: 0;
     font-weight: bold;
     line-height: normal;
@@ -260,32 +268,6 @@ header nav ul li a:hover{
     margin: 0;
 }
 
-/*   ---FOOTER---   */
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    background-color: rgb(45, 51, 52);
-    padding: 0 15px 0 15px;
-}
-footer h2{
-    font-style: italic;
-    font-size: 35px;
-    line-height: normal;
-    margin: 0;
-    font-weight: bold;
-}
-footer div{
-    display: flex;
-    justify-content: space-around;
-    width: 170px;
-}
-footer div a img{
-    height: 30px;
-    width: 30px;
-}
-
 /*      ------SERVICIOS------      */
 .servicios-intro{
     background-image: url("../img/img-servicios.jpg");
@@ -303,7 +285,7 @@ footer div a img{
 .servicios-intro div h2{
     font-size: 70px;
     font-weight: bold;
-    margin:15px;
+    margin: 15px;
     padding: 5px;
     border: 2px dashed white;
     border-radius: 15px;
@@ -324,6 +306,10 @@ footer div a img{
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: black;
+    transition: border 0.2s linear;
+}
+.aspecto-servicios:hover{
+    border: solid 1.5px white;
 }
 .aspecto-servicios img{
     height: 450px;
@@ -364,14 +350,14 @@ footer div a img{
     color: white;
     font-size: 23px;
     text-align: center;
-    padding:0 20px 15px 20px;
+    padding: 0 20px 15px 20px;
     line-height: normal;
     margin: 0;
 }
 
 /* ------ NOTICIAS ------ */
 .noticias-intro{
-    background-image: url("../img/img-noticias.jpg"); ;
+    background-image: url("../img/img-noticias.jpg");
 }
 .noticias-intro div{
     display: flex;
@@ -387,7 +373,7 @@ footer div a img{
 .noticias-intro div h2{
     font-size: 70px;
     font-weight: bold;
-    margin:15px;
+    margin: 15px;
     padding: 5px;
     border: 2px dashed white;
     border-radius: 15px;
@@ -401,51 +387,63 @@ footer div a img{
     line-height: normal;
     margin: 0;
 }
-.grid-container-noticias{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 300px);
-    grid-template-areas: 
-    "primera segunda segunda"
-    "primera tercera tercera"
-    "cuarta cuarta sexta"
-    "quinta quinta sexta";
-    gap: 20px;
+.noticias-caja{
     width: 80%;
     margin: 0 auto;
-    padding: 50px 0;
-}
-.grid-container-noticias div{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.noticias-caja div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noticias-caja div div img{
+    height: 350px;
+    width: 50%;
+}
+.noticias-caja div div h3{
+    font-size: 35px;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: underline;
+    width: 50%;
+}
+.noticias-caja div p{
+    font-size: 20px;
     color: white;
-    border: solid 5px rgb(22, 190, 179);
-    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(45, 51, 52);
 }
 .noticia-pri{
-    grid-area: primera;
-}
-.noticia-seg{
-    background-color: rgb(45, 51, 52);
-    grid-area: segunda;
-}
-.noticia-ter{
-    grid-area: tercera;
-}
-.noticia-cua{
-    background-color: rgb(45, 51, 52);
-    grid-area: cuarta;
-}
-.noticia-qui{
-    grid-area: quinta;
+    margin: 30px 0;
+    border: solid 5px rgb(22, 190, 179);
+    border-radius: 10px;
 }
 .noticia-sec{
-    background-color: rgb(45, 51, 52);
-    grid-area: sexta;
+    margin: 30px 0;
+    border: solid 5px rgb(22, 190, 179);
+    border-radius: 10px;
+}
+.noticia-ter{
+    margin: 30px 0;
+    border: solid 5px rgb(22, 190, 179);
+    border-radius: 10px;
+}
+.noticia-cua{
+    margin: 30px 0;
+    border: solid 5px rgb(22, 190, 179);
+    border-radius: 10px;
 }
 .newsletter{
-    height: 250px;
+    height: 270px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -454,22 +452,25 @@ footer div a img{
     padding: 0 100px;
 }
 .newsletter div{
-    width: 50%;
+    width: 60%;
 }
-.newsletter h3{
+.newsletter div h3{
     font-size: 30px;
     padding: 10px 0;
     text-decoration: underline;
     font-weight: bold;
+    margin: 0;
+    line-height: normal;
 }
-.newsletter p{
+.newsletter div p{
     font-size: 18px;
     color: white;
+    margin: 0;
 }
 
 /* ------ NOSOTROS ------ */
 .nosotros-intro{
-    background-image: url("../img/img-nosotros.jpg"); ;
+    background-image: url("../img/img-nosotros.jpg");
 }
 .nosotros-intro div{
     display: flex;
@@ -485,7 +486,7 @@ footer div a img{
 .nosotros-intro div h2{
     font-size: 70px;
     font-weight: bold;
-    margin:15px;
+    margin: 15px;
     padding: 5px;
     border: 2px dashed white;
     border-radius: 15px;
@@ -504,12 +505,14 @@ footer div a img{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 40px;
 }
-.historia p{
+.texto-historia p{
     font-size: 20px;
     text-align: center;
     color: white;
-    padding: 10px 100px;
+    padding: 15px 100px;
+    margin: 0;
 }
 .mision{
     height: 250px;
@@ -521,9 +524,11 @@ footer div a img{
     padding: 30px 0;
 }
 .mision h3{
-    font-size: 22px;
+    font-size: 23px;
     font-weight: bold;
     padding-bottom: 15px;
+    margin: 0;
+    line-height: normal;
 }
 .mision p{
     color: white;
@@ -542,13 +547,13 @@ footer div a img{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 40px 0;
+    padding: 50px 0;
 }
 .los-equipos div{
     color: rgb(0, 0, 0);
     font-size: 30px;
     font-weight: bold;
-    padding: 20px;
+    padding: 15px;
     background-color: rgb(22, 190, 179);
     border: 1px solid rgb(22, 190, 179);
     border-radius: 50px;
@@ -557,17 +562,19 @@ footer div a img{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 .los-equipos-sumate h3{
     font-size: 25px;
     font-weight: bold;
     padding: 0 40px;
+    margin: 0;
+    line-height: normal;
 }
 
-/* ------   CONTACTANOS   ------ */
+/* ------   CONTÁCTANOS   ------ */
 .contactanos-intro{
-    background-image: url("../img/img-contactanos.jpg"); ;
+    background-image: url("../img/img-contactanos.jpg");
 }
 .contactanos-intro div{
     display: flex;
@@ -583,7 +590,7 @@ footer div a img{
 .contactanos-intro div h2{
     font-size: 70px;
     font-weight: bold;
-    margin:15px;
+    margin: 15px;
     padding: 5px;
     border: 2px dashed white;
     border-radius: 15px;
@@ -597,25 +604,21 @@ footer div a img{
     line-height: normal;
     margin: 0;
 }
-.seccion-formulario{
+.formulario{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.seccion-formulario{
     width: 90%;
     margin: 0 auto;
     padding: 0 0 50px 0;
 }
-.seccion-formulario div button{
+.formulario form div button{
     width: auto;
 }
-.seccion-formulario div button:hover{
-    color: white;
+.formulario form div button:hover{
     background-color: rgb(22, 190, 179);
-    border-color: rgb(22, 190, 179);
 }
-.seccion-formulario img{
+.formulario img{
     height: 450px;
     width: auto;
     padding-left: 15px;
@@ -651,7 +654,6 @@ footer div a img{
     font-size: 35px;
     padding: 10px;
     margin: 0;
-    font-weight: bold;
     text-decoration: underline;
 }
 .oficina div div p{
@@ -666,6 +668,36 @@ footer div a img{
     object-fit: cover;
 }
 
+/*   ---FOOTER---   */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(45, 51, 52);
+    padding: 0 15px 0 15px;
+}
+footer h2{
+    font-style: italic;
+    font-size: 35px;
+    line-height: normal;
+    margin: 0;
+    font-weight: bold;
+}
+footer div{
+    display: flex;
+    justify-content: space-around;
+    width: 170px;
+}
+footer div a img{
+    height: 30px;
+    width: 30px;
+    transition: scale 1s linear;
+}
+footer div a img:hover{
+    transform: scale(1.2);
+}
+
 /* ------   MEDIA QUERIES   ------ */
 @media screen and (max-width:1150px){
     .grid-container{
@@ -676,7 +708,7 @@ footer div a img{
         height: auto;
     }
     .destacados-padre{
-    flex-direction: column;
+        flex-direction: column;
     }
     .destacados-padre div{
         margin-bottom: 40px;
@@ -688,7 +720,7 @@ footer div a img{
         font-size: 25px;
     }
     .portfolio div p{
-        font-size: 18px; 
+        font-size: 18px;
     }
     .aspecto-servicios img{
         height: 370px;
@@ -698,6 +730,20 @@ footer div a img{
     }
     .aspecto-servicios p{
         font-size: 18px;
+    }
+    .noticias-intro div{
+        width: 75%;
+        padding: 15px 5px;
+    }
+    .mision{
+        height: auto;
+    }
+
+    .los-equipos{
+        flex-wrap: wrap;
+    }
+    .los-equipos div{
+        margin: 15px;
     }
 }
 
@@ -713,7 +759,7 @@ footer div a img{
     }
     .grid-container div h3{
         font-size: 27px;
-        }
+    }
     .grid-container div p{
         font-size: 17px;
     }
@@ -724,7 +770,7 @@ footer div a img{
         font-size: 23px;
     }
     .portfolio div p{
-        font-size: 16px; 
+        font-size: 16px;
     }
     .equipo{
         flex-direction: column;
@@ -751,6 +797,80 @@ footer div a img{
     }
     .propuesta-nueva p{
         font-size: 20px;
+    }
+    .noticias-intro div{
+        width: 85%;
+    }
+    .newsletter {
+        padding: 0 40px;
+    }
+    .newsletter div {
+        width: 80%;
+        padding: 0 10px;
+    }
+    .newsletter div h3{
+        font-size: 27px;
+    }
+    .newsletter div p{
+        font-size: 16px;
+    }
+    .nosotros-intro div{
+        width: 85%;
+        padding: 15px;
+    }
+    .contactanos-intro div{
+        width: 85%;
+        padding: 15px;
+    }
+    .formulario{
+        width: 100%;
+        margin: 0;
+        padding: 0 30px 50px 30px;
+    }
+    .formulario img{
+        height: 400px;
+    }
+
+    .oficina div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border: solid 1.5px black;
+    }
+    .oficina div iframe{
+        padding: 20px 0;
+    }
+    .oficina div div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        padding: 5px;
+    }
+    .oficina div div h3{
+        font-size: 35px;
+        padding: 10px;
+        margin: 0;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .oficina div div p{
+        color: white;
+        font-size: 18px;
+        margin: 0;
+        padding: 5px 10px;
+    }
+
+    .oficina div{
+        flex-direction: column-reverse;
+    }
+    .oficina div iframe{
+        width: 90%;
+    }
+    .oficina div div{
+        width: 90%;
+        margin: 20px;
     }
 }
 
@@ -787,6 +907,22 @@ footer div a img{
     .equipo div h3{
         font-size: 30px;
     }
+    .noticias h2{
+        font-size: 45px;
+        margin-left: 50px;
+    }
+    .noticias-caja div div img{
+        height: 300px;
+    }
+    .noticias-caja div div h3{
+        font-size: 30px;
+    }
+    .noticias-caja div p{
+        font-size: 18px;
+    }
+    .texto-historia p{
+        padding: 15px 50px;
+    }
 }
 
 @media screen and (max-width:795px){
@@ -808,7 +944,10 @@ footer div a img{
     }
     .aspecto-servicios p{
         font-size: 14px;
-    } 
+    }
+    .noticias-intro div{
+        width: 95%;
+    }
 }
 
 @media screen and (max-width:750px){
@@ -842,7 +981,7 @@ footer div a img{
         font-size: 20px;
     }
     .portfolio div p{
-        font-size: 13px; 
+        font-size: 13px;
     }
     .servicios-intro div{
         width: 95%;
@@ -853,6 +992,46 @@ footer div a img{
     }
     .servicios-intro div p{
         font-size: 18px;
+    }
+    .noticias-intro div h2{
+        font-size: 60px;
+    }
+    .noticias-intro div p{
+        font-size: 18px;
+    }
+    .noticias h2{
+        font-size: 35px;
+        margin-left: 30px;
+    }
+    .noticias-caja div div img{
+        height: 250px;
+    }
+    .noticias-caja div div h3{
+        font-size: 25px;
+    }
+    .noticias-caja div p{
+        font-size: 15px;
+    }
+    .nosotros-intro div{
+        width: 95%;
+    }
+    .los-equipos{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .contactanos-intro div{
+        width: 95%;
+    }
+    .formulario{
+        flex-direction: column-reverse;
+        padding: 0 20px 50px;
+    }
+    .formulario img{
+        height: 270px;
+        width: 100%;
+        object-fit: cover;
+        padding-left: 0;
+        padding-bottom: 40px;
     }
 }
 
@@ -869,7 +1048,7 @@ footer div a img{
         font-size: 23px;
     }
     .portfolio div p{
-        font-size: 16px; 
+        font-size: 16px;
     }
     .equipo{
         padding: 30px 5px;
@@ -911,6 +1090,55 @@ footer div a img{
         color: black;
         font-weight: bold;
     }
+    .noticias-intro div h2{
+        font-size: 50px;
+        text-align: center;
+    }
+    .noticias-intro div p{
+        font-size: 16px;
+    }
+    .nosotros-intro div h2{
+        font-size: 50px;
+        text-align: center;
+    }
+    .nosotros-intro div p{
+        font-size: 16px;
+    }
+    .historia h2{
+        font-size: 35px;
+        margin: 0;
+        text-align: center;
+    }
+    .texto-historia p{
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+    .mision h3{
+        font-size: 20px;
+    }
+    .mision p{
+        font-size: 23px;
+        width: 100%;
+        margin: 0;
+        padding: 0 30px;
+    }
+    .nosotros-equipos h2{
+        font-size: 45px;
+        margin-left: 50px;
+    }
+    .los-equipos-sumate{
+        flex-direction: column;
+    }
+    .los-equipos-sumate h3{
+        font-size: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .seccion-formulario h2{
+        font-size: 35px;
+        margin: 0;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:525px){
@@ -934,6 +1162,75 @@ footer div a img{
         width: 25px;
     }
     .propuesta-nueva p{
+        font-size: 15px;
+    }
+    .noticias h2{
+        margin: 0;
+        text-align: center;
+    }
+    .noticias-caja div div{
+        flex-direction: column;
+    }
+    .noticias-caja div div img{
+        width: 100%;
+    }
+    .noticias-caja div div h3{
+        width: 100%;
+        padding: 15px 20px;
+    }
+    .newsletter{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 20px;
+    }
+    .newsletter div{
+        width: 100%;
+        padding: 0 0 10px 0;
+    }
+    .newsletter div h3{
+        font-size: 25px;
+    }
+    .newsletter div p{
+        font-size: 15px;
+    }
+    .nosotros-equipos h2{
+        font-size: 35px;
+        margin: 0;
+        text-align: center;
+    }
+    .nosotros-equipos p{
+        font-size: 18px;
+        width: 90%;
+        text-align: center;
+    }
+    .los-equipos-sumate h3{
+        padding: 10px;
+    }
+    .contactanos-intro div h2{
+        font-size: 48px;
+        text-align: center;
+    }
+    .contactanos-intro div p{
+        font-size: 16px;
+    }
+    .oficina h2{
+        font-size: 35px;
+        margin: 0;
+        text-align: center;
+    }
+    .oficina p{
+        font-size: 18px;
+        width: 90%;
+        text-align: center;
+    }
+    .oficina div div{
+        text-align: center;
+    }
+    .oficina div div h3{
+        font-size: 28px;
+    }
+    .oficina div div p{
         font-size: 15px;
     }
 }
@@ -962,7 +1259,7 @@ footer div a img{
         margin: 15px 0 10px 0;
         font-size: 25px;
         text-decoration: underline;
-        }
+    }
     .grid-container div p{
         font-size: 15px;
     }
@@ -980,6 +1277,11 @@ footer div a img{
         font-size: 20px;
     }
     .portfolio div p{
-        font-size: 13px; 
+        font-size: 13px;
+    }
+    .los-equipos div{
+        margin: 10px;
+        padding: 10px;
+        font-size: 25px;
     }
 }
