@@ -1,0 +1,1315 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,400;1,700&display=swap");
+.hero, .destacados .destacados-padre .destacados-sd, .destacados .destacados-padre .destacados-gd, .destacados .destacados-padre .destacados-da, .servicios-intro, .noticias-intro, .nosotros-intro, .contactanos-intro {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.hero, .servicios-intro, .noticias-intro, .nosotros-intro, .contactanos-intro {
+  height: 500px;
+  width: 100%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.valores h2, .destacados h2, .noticias h2, .historia h2, .nosotros-equipos h2, .seccion-formulario h2, .oficina h2 {
+  padding-top: 50px;
+  margin-left: 100px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: normal; }
+
+.equipo div a, .propuesta-nueva a, .newsletter a, .nosotros-equipos .los-equipos-sumate a, .seccion-formulario .formulario form div button {
+  text-decoration: none;
+  background-color: #16beb3;
+  color: black;
+  font-size: 25px;
+  font-style: italic;
+  border: 2px solid #16beb3;
+  border-radius: 15px;
+  padding: 5px;
+  transition: color 0.3s ease-out, border 0.3s ease-out; }
+  .equipo div a:hover, .propuesta-nueva a:hover, .newsletter a:hover, .nosotros-equipos .los-equipos-sumate a:hover, .seccion-formulario .formulario form div button:hover {
+    color: white;
+    border: 2px solid white; }
+
+.servicios-sd, .servicios-cs, .servicios-gd, .servicios-sre, .servicios-da {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: black;
+  transition: border 0.2s linear; }
+  .servicios-sd:hover, .servicios-cs:hover, .servicios-gd:hover, .servicios-sre:hover, .servicios-da:hover {
+    border: solid 1.5px white; }
+
+/*   ---IMPORTS---   */
+/*   ---RESET---   */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*   ---BODY---   */
+body {
+  font-family: 'Roboto Condensed', sans-serif; }
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 80px;
+  padding: 0 15px 0 15px; }
+  header h1 {
+    color: #16beb3;
+    font-size: 45px;
+    font-style: italic;
+    margin-bottom: 0;
+    font-weight: bold;
+    line-height: normal; }
+  header nav ul {
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0; }
+    header nav ul li {
+      margin: 5px; }
+      header nav ul li a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.5s ease; }
+        header nav ul li a:hover {
+          color: #16beb3; }
+
+.hero {
+  background-image: url("../img/img-hero.jpg"); }
+  .hero div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    width: 800px;
+    border: 5px solid #16beb3;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px; }
+    .hero div .index-primer-texto {
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px 0 20px 0;
+      margin: 0;
+      line-height: normal; }
+    .hero div h2 {
+      color: #16beb3;
+      font-size: 55px;
+      font-weight: bold;
+      margin: 0;
+      line-height: normal; }
+    .hero div .index-segundo-texto {
+      font-size: 20px;
+      padding: 20px 0 10px 0;
+      margin: 0;
+      line-height: normal; }
+
+.valores {
+  background-color: black; }
+  .valores h2 {
+    color: #16beb3; }
+  .valores .grid-container {
+    height: 950px;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center; }
+    .valores .grid-container div {
+      background-color: #16beb3;
+      padding: 15px;
+      text-align: center;
+      border: 10px solid white;
+      border-radius: 30px;
+      height: 87%;
+      width: 90%;
+      transition: 1s ease; }
+      .valores .grid-container div:hover {
+        transform: scale(1.05); }
+      .valores .grid-container div img {
+        width: 200px;
+        height: 200px; }
+      .valores .grid-container div h3 {
+        margin: 15px 0 10px 0;
+        font-size: 30px;
+        text-decoration: underline;
+        color: black;
+        font-weight: bold;
+        line-height: normal; }
+      .valores .grid-container div p {
+        font-size: 20px;
+        color: black;
+        margin: 0;
+        line-height: normal; }
+
+.destacados {
+  background-color: black;
+  height: 550px; }
+  .destacados h2 {
+    color: #16beb3; }
+  .destacados .destacados-padre {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 0; }
+    .destacados .destacados-padre .destacados-sd {
+      background-image: url("../img/services-sd.jpg");
+      width: 350px;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      border: 2px solid white;
+      border-radius: 15px; }
+      .destacados .destacados-padre .destacados-sd a {
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+        padding: 3px;
+        border: 1px solid black;
+        border-radius: 15px; }
+    .destacados .destacados-padre .destacados-gd {
+      background-image: url("../img/services-gd.jpg");
+      width: 350px;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      border: 2px solid white;
+      border-radius: 15px; }
+      .destacados .destacados-padre .destacados-gd a {
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+        padding: 3px;
+        border: 1px solid black;
+        border-radius: 15px; }
+    .destacados .destacados-padre .destacados-da {
+      background-image: url("../img/services-da.jpg");
+      width: 350px;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      border: 2px solid white;
+      border-radius: 15px; }
+      .destacados .destacados-padre .destacados-da a {
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+        padding: 3px;
+        border: 1px solid black;
+        border-radius: 15px; }
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #2d3334;
+  margin-bottom: 0; }
+  .portfolio img {
+    height: 450px;
+    width: 50%; }
+  .portfolio div h3 {
+    color: #16beb3;
+    font-size: 30px;
+    padding: 0 15px 10px 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+    line-height: normal; }
+  .portfolio div p {
+    color: white;
+    font-size: 20px;
+    padding: 0 15px 10px 20px;
+    margin-bottom: 0;
+    line-height: normal; }
+
+.equipo {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 400px; }
+  .equipo div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5px; }
+    .equipo div h2 {
+      color: #16beb3;
+      font-size: 50px;
+      font-weight: bold;
+      line-height: normal;
+      margin: 0; }
+    .equipo div p {
+      color: white;
+      font-size: 20px;
+      word-wrap: break-word;
+      width: 500px;
+      padding: 10px;
+      text-align: center;
+      line-height: normal;
+      margin: 0; }
+  .equipo div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5px; }
+    .equipo div h3 {
+      color: #16beb3;
+      font-size: 35px;
+      padding: 20px;
+      line-height: normal;
+      margin: 0; }
+
+.servicios-intro {
+  background-image: url("../img/img-servicios.jpg"); }
+  .servicios-intro div {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 725px;
+    border: 5px solid #16beb3;
+    border-radius: 15px;
+    padding: 15px 0; }
+    .servicios-intro div h2 {
+      color: #16beb3;
+      font-size: 70px;
+      font-weight: bold;
+      margin: 15px;
+      padding: 5px;
+      border: 2px dashed white;
+      border-radius: 15px;
+      line-height: normal; }
+    .servicios-intro div p {
+      color: white;
+      font-size: 20px;
+      padding: 15px 25px;
+      text-align: center;
+      line-height: normal;
+      margin: 0; }
+
+.servicios-sd img {
+  height: 450px;
+  width: 50%; }
+
+.servicios-sd div {
+  text-align: center; }
+  .servicios-sd div h3 {
+    color: #16beb3;
+    font-size: 35px;
+    padding: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0; }
+  .servicios-sd div p {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    line-height: normal;
+    margin: 0; }
+
+.servicios-cs {
+  flex-direction: row-reverse; }
+  .servicios-cs img {
+    height: 450px;
+    width: 50%; }
+  .servicios-cs div {
+    text-align: center; }
+    .servicios-cs div h3 {
+      color: #16beb3;
+      font-size: 35px;
+      padding: 10px;
+      text-decoration: underline;
+      font-weight: bold;
+      line-height: normal;
+      margin: 0; }
+    .servicios-cs div p {
+      color: white;
+      font-size: 20px;
+      padding: 10px;
+      line-height: normal;
+      margin: 0; }
+
+.servicios-gd img {
+  height: 450px;
+  width: 50%; }
+
+.servicios-gd div {
+  text-align: center; }
+  .servicios-gd div h3 {
+    color: #16beb3;
+    font-size: 35px;
+    padding: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0; }
+  .servicios-gd div p {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    line-height: normal;
+    margin: 0; }
+
+.servicios-sre {
+  flex-direction: row-reverse; }
+  .servicios-sre img {
+    height: 450px;
+    width: 50%; }
+  .servicios-sre div {
+    text-align: center; }
+    .servicios-sre div h3 {
+      color: #16beb3;
+      font-size: 35px;
+      padding: 10px;
+      text-decoration: underline;
+      font-weight: bold;
+      line-height: normal;
+      margin: 0; }
+    .servicios-sre div p {
+      color: white;
+      font-size: 20px;
+      padding: 10px;
+      line-height: normal;
+      margin: 0; }
+
+.servicios-da img {
+  height: 450px;
+  width: 50%; }
+
+.servicios-da div {
+  text-align: center; }
+  .servicios-da div h3 {
+    color: #16beb3;
+    font-size: 35px;
+    padding: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0; }
+  .servicios-da div p {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    line-height: normal;
+    margin: 0; }
+
+.propuesta-nueva {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px; }
+  .propuesta-nueva p {
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    padding: 0 20px 15px 20px;
+    line-height: normal;
+    margin: 0; }
+  .propuesta-nueva a {
+    margin-top: 15px; }
+
+.noticias-intro {
+  background-image: url("../img/img-noticias.jpg"); }
+  .noticias-intro div {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 65%;
+    margin: 0 auto;
+    border: 5px solid #16beb3;
+    border-radius: 15px;
+    padding: 15px 0; }
+    .noticias-intro div h2 {
+      color: #16beb3;
+      font-size: 70px;
+      font-weight: bold;
+      margin: 15px;
+      padding: 5px;
+      border: 2px dashed white;
+      border-radius: 15px;
+      line-height: normal; }
+    .noticias-intro div p {
+      color: white;
+      font-size: 20px;
+      padding: 15px 25px;
+      text-align: center;
+      line-height: normal;
+      margin: 0; }
+
+.noticias {
+  background-color: black; }
+  .noticias h2 {
+    color: #16beb3; }
+  .noticias .noticias-caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto; }
+    .noticias .noticias-caja .noticia-pri {
+      margin: 30px 0;
+      border: solid 5px #16beb3;
+      border-radius: 10px; }
+      .noticias .noticias-caja .noticia-pri div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row; }
+        .noticias .noticias-caja .noticia-pri div img {
+          height: 350px;
+          width: 50%; }
+        .noticias .noticias-caja .noticia-pri div h3 {
+          color: #16beb3;
+          font-size: 35px;
+          font-weight: bold;
+          line-height: normal;
+          margin: 0;
+          padding: 0 20px;
+          text-align: center;
+          text-decoration: underline;
+          width: 50%; }
+      .noticias .noticias-caja .noticia-pri p {
+        color: white;
+        font-size: 20px;
+        background-color: #2d3334;
+        text-align: center;
+        margin: 0;
+        padding: 20px; }
+    .noticias .noticias-caja .noticia-sec {
+      margin: 30px 0;
+      border: solid 5px #16beb3;
+      border-radius: 10px; }
+      .noticias .noticias-caja .noticia-sec div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row; }
+        .noticias .noticias-caja .noticia-sec div img {
+          height: 350px;
+          width: 50%; }
+        .noticias .noticias-caja .noticia-sec div h3 {
+          color: #16beb3;
+          font-size: 35px;
+          font-weight: bold;
+          line-height: normal;
+          margin: 0;
+          padding: 0 20px;
+          text-align: center;
+          text-decoration: underline;
+          width: 50%; }
+      .noticias .noticias-caja .noticia-sec p {
+        color: white;
+        font-size: 20px;
+        background-color: #2d3334;
+        text-align: center;
+        margin: 0;
+        padding: 20px; }
+    .noticias .noticias-caja .noticia-ter {
+      margin: 30px 0;
+      border: solid 5px #16beb3;
+      border-radius: 10px; }
+      .noticias .noticias-caja .noticia-ter div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row; }
+        .noticias .noticias-caja .noticia-ter div img {
+          height: 350px;
+          width: 50%; }
+        .noticias .noticias-caja .noticia-ter div h3 {
+          color: #16beb3;
+          font-size: 35px;
+          font-weight: bold;
+          line-height: normal;
+          margin: 0;
+          padding: 0 20px;
+          text-align: center;
+          text-decoration: underline;
+          width: 50%; }
+      .noticias .noticias-caja .noticia-ter p {
+        color: white;
+        font-size: 20px;
+        background-color: #2d3334;
+        text-align: center;
+        margin: 0;
+        padding: 20px; }
+    .noticias .noticias-caja .noticia-cua {
+      margin: 30px 0;
+      border: solid 5px #16beb3;
+      border-radius: 10px; }
+      .noticias .noticias-caja .noticia-cua div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row; }
+        .noticias .noticias-caja .noticia-cua div img {
+          height: 350px;
+          width: 50%; }
+        .noticias .noticias-caja .noticia-cua div h3 {
+          color: #16beb3;
+          font-size: 35px;
+          font-weight: bold;
+          line-height: normal;
+          margin: 0;
+          padding: 0 20px;
+          text-align: center;
+          text-decoration: underline;
+          width: 50%; }
+      .noticias .noticias-caja .noticia-cua p {
+        color: white;
+        font-size: 20px;
+        background-color: #2d3334;
+        text-align: center;
+        margin: 0;
+        padding: 20px; }
+
+.newsletter {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  height: 270px;
+  border-top: solid 1.5px white;
+  border-bottom: solid 1.5px white;
+  padding: 0 100px; }
+  .newsletter div {
+    width: 60%; }
+    .newsletter div h3 {
+      color: #16beb3;
+      font-size: 30px;
+      padding: 10px 0;
+      text-decoration: underline;
+      font-weight: bold;
+      margin: 0;
+      line-height: normal; }
+    .newsletter div p {
+      color: white;
+      font-size: 18px;
+      margin: 0; }
+
+.nosotros-intro {
+  background-image: url("../img/img-nosotros.jpg"); }
+  .nosotros-intro div {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 65%;
+    margin: 0 auto;
+    border: 5px solid #16beb3;
+    border-radius: 15px;
+    padding: 15px 0; }
+    .nosotros-intro div h2 {
+      color: #16beb3;
+      font-size: 70px;
+      font-weight: bold;
+      margin: 15px;
+      padding: 5px;
+      border: 2px dashed white;
+      border-radius: 15px;
+      line-height: normal; }
+    .nosotros-intro div p {
+      color: white;
+      font-size: 20px;
+      padding: 15px 25px;
+      text-align: center;
+      line-height: normal;
+      margin: 0; }
+
+.historia {
+  background-color: black; }
+  .historia h2 {
+    color: #16beb3; }
+  .historia div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px; }
+    .historia div p {
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      padding: 15px 100px;
+      margin: 0; }
+
+.mision {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+  background-color: #2d3334;
+  padding: 30px 0; }
+  .mision h3 {
+    color: #16beb3;
+    font-size: 23px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    margin: 0;
+    line-height: normal; }
+  .mision p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto; }
+
+.nosotros-equipos {
+  background-color: black; }
+  .nosotros-equipos h2 {
+    color: #16beb3; }
+  .nosotros-equipos p {
+    color: white;
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto; }
+  .nosotros-equipos .los-equipos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px 0; }
+    .nosotros-equipos .los-equipos div {
+      color: black;
+      font-size: 30px;
+      font-weight: bold;
+      padding: 15px;
+      background-color: #16beb3;
+      border: 1px solid #16beb3;
+      border-radius: 50px; }
+  .nosotros-equipos .los-equipos-sumate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 40px; }
+    .nosotros-equipos .los-equipos-sumate h3 {
+      color: #16beb3;
+      font-size: 25px;
+      font-weight: bold;
+      padding: 0 40px;
+      margin: 0;
+      line-height: normal; }
+
+.contactanos-intro {
+  background-image: url("../img/img-contactanos.jpg"); }
+  .contactanos-intro div {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+    border: 5px solid #16beb3;
+    border-radius: 15px;
+    padding: 15px 0; }
+    .contactanos-intro div h2 {
+      color: #16beb3;
+      font-size: 70px;
+      font-weight: bold;
+      margin: 15px;
+      padding: 5px;
+      border: 2px dashed white;
+      border-radius: 15px;
+      line-height: normal; }
+    .contactanos-intro div p {
+      color: white;
+      font-size: 20px;
+      padding: 15px 25px;
+      text-align: center;
+      line-height: normal;
+      margin: 0; }
+
+.seccion-formulario {
+  background-color: black; }
+  .seccion-formulario h2 {
+    color: #16beb3; }
+  .seccion-formulario .formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0 50px 0; }
+    .seccion-formulario .formulario form div label {
+      color: #16beb3; }
+    .seccion-formulario .formulario form div button {
+      width: auto; }
+      .seccion-formulario .formulario form div button:hover {
+        background-color: #16beb3; }
+    .seccion-formulario .formulario img {
+      height: 450px;
+      width: auto;
+      padding-left: 15px; }
+
+.oficina {
+  background-color: #2d3334; }
+  .oficina h2 {
+    color: #16beb3; }
+  .oficina p {
+    color: white;
+    font-size: 20px;
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 30px; }
+  .oficina div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    border: solid 1.5px black; }
+    .oficina div iframe {
+      padding: 20px 0; }
+    .oficina div div {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+      width: 50%;
+      padding: 5px; }
+      .oficina div div h3 {
+        color: #16beb3;
+        font-size: 35px;
+        padding: 10px;
+        margin: 0;
+        text-decoration: underline; }
+      .oficina div div p {
+        color: white;
+        font-size: 18px;
+        margin: 0;
+        padding: 5px 10px; }
+
+.final-contactanos img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: #2d3334;
+  height: 70px;
+  padding: 0 15px 0 15px; }
+  footer h2 {
+    color: #16beb3;
+    font-size: 35px;
+    font-style: italic;
+    line-height: normal;
+    margin: 0;
+    font-weight: bold; }
+  footer div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 170px; }
+    footer div a img {
+      height: 30px;
+      width: 30px;
+      transition: scale 1s linear; }
+      footer div a img:hover {
+        transform: scale(1.2); }
+
+@media screen and (max-width: 1150px) {
+  .valores .grid-container {
+    width: 100%;
+    margin: 0; }
+  .destacados {
+    height: auto; }
+    .destacados .destacados-padre {
+      flex-direction: column; }
+      .destacados .destacados-padre div {
+        margin-bottom: 40px; }
+  .portfolio img {
+    height: 370px; }
+  .portfolio div h3 {
+    font-size: 25px; }
+  .portfolio div p {
+    font-size: 18px; }
+  .aspecto-servicios img {
+    height: 370px; }
+  .aspecto-servicios div h3 {
+    font-size: 30px; }
+  .aspecto-servicios div p {
+    font-size: 18px; }
+  .noticias-intro div {
+    width: 75%;
+    padding: 15px 5px; }
+  .mision {
+    height: auto; }
+  .los-equipos {
+    flex-wrap: wrap; }
+    .los-equipos div {
+      margin: 15px; } }
+
+@media screen and (max-width: 920px) {
+  .valores .grid-container div {
+    padding: 10px;
+    height: 80%;
+    width: 83%; }
+    .valores .grid-container div img {
+      width: 180px;
+      height: 180px; }
+    .valores .grid-container div h3 {
+      font-size: 27px; }
+    .valores .grid-container div p {
+      font-size: 17px; }
+  .portfolio img {
+    height: 300px; }
+  .portfolio div h3 {
+    font-size: 23px; }
+  .portfolio div p {
+    font-size: 16px; }
+  .equipo {
+    flex-direction: column;
+    height: auto;
+    padding: 20px; }
+    .equipo div {
+      padding: 0; }
+      .equipo div p {
+        padding: 5px; }
+    .equipo div h3 {
+      padding: 10px 0; }
+  .aspecto-servicios img {
+    height: 340px; }
+  .aspecto-servicios div h3 {
+    font-size: 25px; }
+  .aspecto-servicios div p {
+    font-size: 16px; }
+  .propuesta-nueva p {
+    font-size: 20px; }
+  .noticias-intro div {
+    width: 85%; }
+  .newsletter {
+    padding: 0 40px; }
+    .newsletter div {
+      width: 80%;
+      padding: 0 10px; }
+      .newsletter div h3 {
+        font-size: 27px; }
+      .newsletter div p {
+        font-size: 16px; }
+  .nosotros-intro div {
+    width: 85%;
+    padding: 15px; }
+  .contactanos-intro div {
+    width: 85%;
+    padding: 15px; }
+  .seccion-formulario .formulario {
+    width: 100%;
+    margin: 0;
+    padding: 0 30px 50px 30px; }
+    .seccion-formulario .formulario img {
+      height: 400px; }
+  .oficina div {
+    flex-direction: column-reverse; }
+    .oficina div iframe {
+      width: 90%; }
+    .oficina div div {
+      width: 90%;
+      margin: 20px; } }
+
+@media screen and (max-width: 830px) {
+  .hero div {
+    width: 95%;
+    padding: 5px; }
+    .hero div .index-primer-texto {
+      font-size: 17px;
+      padding: 7px 0 17px 0; }
+    .hero div h2 {
+      font-size: 50px; }
+    .hero div .index-segundo-texto {
+      font-size: 17px;
+      padding: 17px 0 7px 0; }
+  .valores h2 {
+    font-size: 45px;
+    margin-left: 50px; }
+  .destacados h2 {
+    font-size: 45px;
+    margin-left: 50px; }
+  .equipo div h2 {
+    font-size: 45px; }
+  .equipo div p {
+    font-size: 18px; }
+  .equipo div h3 {
+    font-size: 30px; }
+  .noticias h2 {
+    font-size: 45px;
+    margin-left: 50px; }
+  .noticias .noticias-caja .noticia-pri div img {
+    height: 300px; }
+  .noticias .noticias-caja .noticia-pri div h3 {
+    font-size: 30px; }
+  .noticias .noticias-caja .noticia-sec div img {
+    height: 300px; }
+  .noticias .noticias-caja .noticia-sec div h3 {
+    font-size: 30px; }
+  .noticias .noticias-caja .noticia-ter div img {
+    height: 300px; }
+  .noticias .noticias-caja .noticia-ter div h3 {
+    font-size: 30px; }
+  .noticias .noticias-caja .noticia-cua div img {
+    height: 300px; }
+  .noticias .noticias-caja .noticia-cua div h3 {
+    font-size: 30px; }
+  .historia .texto-historia p {
+    padding: 15px 50px; } }
+
+@media screen and (max-width: 795px) {
+  .valores .grid-container {
+    height: auto;
+    grid-template-columns: 1fr;
+    gap: 40px; }
+    .valores .grid-container div {
+      height: auto;
+      width: 400px;
+      margin: 5px; }
+  .aspecto-servicios img {
+    height: 285px; }
+  .aspecto-servicios div h3 {
+    font-size: 22px; }
+  .aspecto-servicios div p {
+    font-size: 14px; }
+  .noticias-intro div {
+    width: 95%; } }
+
+@media screen and (max-width: 750px) {
+  header {
+    flex-direction: column;
+    height: auto; }
+  .hero div .index-primer-texto {
+    font-size: 13px;
+    padding: 7px 0 14px 0; }
+  .hero div h2 {
+    font-size: 40px; }
+  .hero div .index-segundo-texto {
+    font-size: 13px;
+    padding: 14px 0 7px 0; }
+  .valores h2 {
+    font-size: 35px;
+    margin-left: 30px; }
+  .destacados h2 {
+    font-size: 35px;
+    margin-left: 30px; }
+  .portfolio img {
+    height: 270px; }
+  .portfolio div h3 {
+    font-size: 20px; }
+  .portfolio div p {
+    font-size: 13px; }
+  .servicios-intro div {
+    width: 95%;
+    padding: 5px; }
+    .servicios-intro div h2 {
+      font-size: 60px; }
+    .servicios-intro div p {
+      font-size: 18px; }
+  .noticias-intro div h2 {
+    font-size: 60px; }
+  .noticias-intro div p {
+    font-size: 18px; }
+  .noticias h2 {
+    font-size: 35px;
+    margin-left: 30px; }
+  .noticias .noticias-caja .noticia-pri div img {
+    height: 250px; }
+  .noticias .noticias-caja .noticia-pri div h3 {
+    font-size: 25px; }
+  .noticias .noticias-caja .noticia-pri p {
+    font-size: 15px; }
+  .noticias .noticias-caja .noticia-sec div img {
+    height: 250px; }
+  .noticias .noticias-caja .noticia-sec div h3 {
+    font-size: 25px; }
+  .noticias .noticias-caja .noticia-sec p {
+    font-size: 15px; }
+  .noticias .noticias-caja .noticia-ter div img {
+    height: 250px; }
+  .noticias .noticias-caja .noticia-ter div h3 {
+    font-size: 25px; }
+  .noticias .noticias-caja .noticia-ter p {
+    font-size: 15px; }
+  .noticias .noticias-caja .noticia-cua div img {
+    height: 250px; }
+  .noticias .noticias-caja .noticia-cua div h3 {
+    font-size: 25px; }
+  .noticias .noticias-caja .noticia-cua p {
+    font-size: 15px; }
+  .nosotros-intro div {
+    width: 95%; }
+  .nosotros-equipos .los-equipos {
+    flex-wrap: nowrap;
+    flex-direction: column; }
+  .contactanos-intro div {
+    width: 95%; }
+  .seccion-formulario .formulario {
+    flex-direction: column-reverse;
+    padding: 0 20px 50px; }
+    .seccion-formulario .formulario img {
+      height: 270px;
+      width: 100%;
+      object-fit: cover;
+      padding-left: 0;
+      padding-bottom: 40px; } }
+
+@media screen and (max-width: 635px) {
+  .portfolio {
+    flex-direction: column; }
+    .portfolio img {
+      height: 330px;
+      width: 100%;
+      margin-bottom: 20px; }
+    .portfolio div h3 {
+      font-size: 23px; }
+    .portfolio div p {
+      font-size: 16px; }
+  .equipo {
+    padding: 30px 5px; }
+    .equipo div h2 {
+      font-size: 35px; }
+    .equipo div p {
+      font-size: 18px; }
+    .equipo div h3 {
+      font-size: 25px; }
+  .servicios-intro div h2 {
+    font-size: 50px;
+    text-align: center; }
+  .servicios-intro div p {
+    font-size: 16px; }
+  .aspecto-servicios {
+    flex-direction: column; }
+    .aspecto-servicios img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover; }
+    .aspecto-servicios div {
+      padding: 15px 0; }
+  .propuesta-nueva {
+    background-color: white;
+    height: auto;
+    padding: 20px 5px; }
+    .propuesta-nueva p {
+      font-size: 17px;
+      color: black;
+      font-weight: bold; }
+  .noticias-intro div h2 {
+    font-size: 50px;
+    text-align: center; }
+  .noticias-intro div p {
+    font-size: 16px; }
+  .nosotros-intro div h2 {
+    font-size: 50px;
+    text-align: center; }
+  .nosotros-intro div p {
+    font-size: 16px; }
+  .historia h2 {
+    font-size: 35px;
+    margin: 0;
+    text-align: center; }
+  .historia .texto-historia p {
+    font-size: 18px;
+    padding: 10px 30px; }
+  .mision h3 {
+    font-size: 20px; }
+  .mision p {
+    font-size: 23px;
+    width: 100%;
+    margin: 0;
+    padding: 0 30px; }
+  .nosotros-equipos h2 {
+    font-size: 45px;
+    margin-left: 50px; }
+  .nosotros-equipos .los-equipos-sumate {
+    flex-direction: column; }
+    .nosotros-equipos .los-equipos-sumate h3 {
+      margin-bottom: 15px;
+      text-align: center; }
+  .seccion-formulario h2 {
+    font-size: 35px;
+    margin: 0;
+    text-align: center; } }
+
+@media screen and (max-width: 525px) {
+  .equipo div h2 {
+    margin-left: 30px; }
+  .equipo div p {
+    width: 97%; }
+  footer {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0; }
+    footer div {
+      width: 120px;
+      padding-top: 5px; }
+      footer div a img {
+        height: 25px;
+        width: 25px; }
+  .propuesta-nueva p {
+    font-size: 15px; }
+  .noticias h2 {
+    margin: 0;
+    text-align: center; }
+  .noticias .noticias-caja .noticia-pri div {
+    flex-direction: column; }
+    .noticias .noticias-caja .noticia-pri div img {
+      width: 100%; }
+    .noticias .noticias-caja .noticia-pri div h3 {
+      width: 100%;
+      padding: 15px 20px; }
+  .noticias .noticias-caja .noticia-sec div {
+    flex-direction: column; }
+    .noticias .noticias-caja .noticia-sec div img {
+      width: 100%; }
+    .noticias .noticias-caja .noticia-sec div h3 {
+      width: 100%;
+      padding: 15px 20px; }
+  .noticias .noticias-caja .noticia-ter div {
+    flex-direction: column; }
+    .noticias .noticias-caja .noticia-ter div img {
+      width: 100%; }
+    .noticias .noticias-caja .noticia-ter div h3 {
+      width: 100%;
+      padding: 15px 20px; }
+  .noticias .noticias-caja .noticia-cua div {
+    flex-direction: column; }
+    .noticias .noticias-caja .noticia-cua div img {
+      width: 100%; }
+    .noticias .noticias-caja .noticia-cua div h3 {
+      width: 100%;
+      padding: 15px 20px; }
+  .newsletter {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 20px; }
+    .newsletter div {
+      width: 100%;
+      padding: 0 0 10px 0; }
+      .newsletter div h3 {
+        font-size: 25px; }
+      .newsletter div p {
+        font-size: 15px; }
+  .nosotros-equipos h2 {
+    font-size: 35px;
+    margin: 0;
+    text-align: center; }
+  .nosotros-equipos p {
+    font-size: 18px;
+    width: 90%;
+    text-align: center; }
+  .nosotros-equipos .los-equipos-sumate h3 {
+    padding: 10px; }
+  .contactanos-intro div h2 {
+    font-size: 48px;
+    text-align: center; }
+  .contactanos-intro div p {
+    font-size: 16px; }
+  .oficina h2 {
+    font-size: 35px;
+    margin: 0;
+    text-align: center; }
+  .oficina p {
+    font-size: 18px;
+    width: 90%;
+    text-align: center; }
+  .oficina div div {
+    text-align: center; }
+    .oficina div div h3 {
+      font-size: 28px; }
+    .oficina div div p {
+      font-size: 15px; } }
+
+@media screen and (max-width: 420px) {
+  header h1 {
+    font-size: 35px; }
+  header nav ul {
+    font-size: 16px; }
+  .hero div h2 {
+    font-size: 30px; }
+  .valores .grid-container {
+    gap: 20px; }
+    .valores .grid-container div {
+      width: 300px; }
+      .valores .grid-container div img {
+        width: 150px;
+        height: 150px; }
+      .valores .grid-container div h3 {
+        margin: 15px 0 10px 0;
+        font-size: 25px;
+        text-decoration: underline; }
+      .valores .grid-container div p {
+        font-size: 15px; }
+  .destacados .destacados-padre .destacados-sd {
+    width: 300px;
+    height: 200px; }
+    .destacados .destacados-padre .destacados-sd a {
+      font-size: 23px; }
+  .destacados .destacados-padre .destacados-gd {
+    width: 300px;
+    height: 200px; }
+    .destacados .destacados-padre .destacados-gd a {
+      font-size: 23px; }
+  .destacados .destacados-padre .destacados-da {
+    width: 300px;
+    height: 200px; }
+    .destacados .destacados-padre .destacados-da a {
+      font-size: 23px; }
+  .portfolio img {
+    height: 240px; }
+  .portfolio div h3 {
+    font-size: 20px; }
+  .portfolio div p {
+    font-size: 13px; }
+  .nosotros-equipos .los-equipos div {
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px; } }

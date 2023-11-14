@@ -1,0 +1,29 @@
+// ------ FOOTER ------
+footer{
+    @include flex (flex, space-between, center, row);
+    background-color: $color-cua;
+    height: 70px;
+    padding: 0 15px 0 15px;
+    h2{
+        color: $color-pri;
+        font-size: nth($size, 1);
+        font-style: italic;
+        line-height: normal;
+        margin: 0;
+        font-weight: bold;
+    }
+    div{
+        @include flex (flex, space-around, center, row);
+        width: 170px;
+        a{
+            img{
+                height: 30px;
+                width: 30px;
+                transition: scale 1s linear;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

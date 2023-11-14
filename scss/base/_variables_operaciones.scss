@@ -1,0 +1,71 @@
+// ------ VARIABLES ------
+$color-pri: rgb(22, 190, 179);
+$color-sec: rgb(0, 0, 0);
+$color-ter: rgb(255, 255, 255);
+$color-cua: rgb(45, 51, 52);
+
+// ------ LISTAS ------
+$size: 35px,
+30px,
+20px,
+18px,
+16px;
+
+// ------ EXTENDS ------
+%aspecto-bg-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+%seccion-inicial-doc{
+    height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%titulos-h2{
+    padding-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: normal;
+}
+%aspecto-boton{
+    text-decoration: none;
+    background-color: rgb(22, 190, 179);
+    color: black;
+    font-size: 25px;
+    font-style: italic;
+    border: 2px solid rgb(22, 190, 179);
+    border-radius: 15px;
+    padding: 5px;
+    transition: color 0.3s ease-out, border 0.3s ease-out;
+    &:hover{
+        color: white;
+        border: 2px solid white;
+    }
+}
+%aspecto-servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: black;
+    transition: border 0.2s linear;
+    &:hover{
+        border: solid 1.5px white;
+    }
+}
+
+// ------ MIXINS ------
+@mixin flex ($display, $justify, $align, $direction){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}

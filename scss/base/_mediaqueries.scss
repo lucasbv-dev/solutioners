@@ -1,0 +1,850 @@
+// ------ MEDIAQUERIES ------
+
+@media screen and (max-width:1150px){
+    .valores{
+        .grid-container{
+            width: 100%;
+            margin: 0;
+        }
+    }
+    .destacados{
+        height: auto;
+        .destacados-padre{
+            flex-direction: column;
+            div{
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .portfolio{
+        img{
+            height: 370px;
+        }
+        div{
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: nth($size, 4);
+            }
+        }
+    }
+    .aspecto-servicios{
+        img{
+            height: 370px;
+        }
+        div{
+            h3{
+                font-size: nth($size, 2);
+            }
+            p{
+                font-size: nth($size, 4);
+            }
+        }
+    }
+    .noticias-intro{
+        div{
+            width: 75%;
+            padding: 15px 5px;
+        }
+    }
+    .mision{
+        height: auto;
+    }
+    .los-equipos{
+        flex-wrap: wrap;
+        div{
+            margin: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:920px){
+    .valores{
+        .grid-container{
+            div{
+                padding: 10px;
+                height: 80%;
+                width: 83%;
+                img{
+                    width: 180px;
+                    height: 180px;
+                }
+                h3{
+                    font-size: 27px;
+                }
+                p{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .portfolio{
+        img{
+            height: 300px;
+        }
+        div{
+            h3{
+                font-size: 23px;
+            }
+            p{
+                font-size: nth($size, 5);
+            }
+        }
+    }
+    .equipo{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        div{
+            padding: 0;
+            p{
+                padding: 5px;
+            }
+        }
+        div{
+            h3{
+                padding: 10px 0;
+            }
+        }
+    }
+    .aspecto-servicios{
+        img{
+            height: 340px;
+        }
+        div{
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: nth($size, 5);
+            }
+        }
+    }
+    .propuesta-nueva{
+        p{
+            font-size: nth($size, 3);
+        }
+    }
+    .noticias-intro{
+        div{
+            width: 85%;
+        }
+    }
+    .newsletter{
+        padding: 0 40px;
+        div{
+            width: 80%;
+            padding: 0 10px;
+            h3{
+                font-size: 27px;
+            }
+            p{
+                font-size: nth($size, 5);
+            }
+        }
+    }
+    .nosotros-intro{
+        div{
+            width: 85%;
+            padding: 15px;
+        }
+    }
+    .contactanos-intro{
+        div{
+            width: 85%;
+            padding: 15px;
+        }
+    }
+    .seccion-formulario{
+        .formulario{
+            width: 100%;
+            margin: 0;
+            padding: 0 30px 50px 30px;
+            img{
+                height: 400px;
+            }
+        }
+    }
+    .oficina{
+        div{
+            flex-direction: column-reverse;
+            iframe{
+                width: 90%;
+            }
+            div{
+                width: 90%;
+                margin: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:830px){
+    .hero{
+        div{
+            width: 95%;
+            padding: 5px;
+            .index-primer-texto{
+                font-size: 17px;
+                padding: 7px 0 17px 0;
+            }
+            h2{
+                font-size: 50px;
+            }
+            .index-segundo-texto{
+                font-size: 17px;
+                padding: 17px 0 7px 0;
+            }
+        }
+    }
+    .valores{
+        h2{
+            font-size: 45px;
+            margin-left: 50px;
+        }
+    }
+    .destacados{
+        h2{
+            font-size: 45px;
+            margin-left: 50px;
+        }
+    }
+    .equipo{
+        div{
+            h2{
+                font-size: 45px;
+            }
+            p{
+                font-size: nth($size, 4);
+            }
+        }
+        div{
+            h3{
+                font-size: nth($size, 2);
+            }
+        }
+    }
+    .noticias{
+        h2{
+            font-size: 45px;
+            margin-left: 50px;
+        }
+        .noticias-caja{
+            .noticia-pri{
+                div{
+                    img{
+                        height: 300px;
+                    }
+                    h3{
+                        font-size: nth($size, 2);
+                    }
+                }
+            }
+            .noticia-sec{
+                div{
+                    img{
+                        height: 300px;
+                    }
+                    h3{
+                        font-size: nth($size, 2);
+                    }
+                }
+            }
+            .noticia-ter{
+                div{
+                    img{
+                        height: 300px;
+                    }
+                    h3{
+                        font-size: nth($size, 2);
+                    }
+                }
+            }
+            .noticia-cua{
+                div{
+                    img{
+                        height: 300px;
+                    }
+                    h3{
+                        font-size: nth($size, 2);
+                    }
+                }
+            }
+        }
+    }
+    .historia{
+        .texto-historia{
+            p{
+                padding: 15px 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:795px){
+    .valores{
+        .grid-container{
+            height: auto;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            div{
+                height: auto;
+                width: 400px;
+                margin: 5px;
+            }
+        }
+    }
+    .aspecto-servicios{
+        img{
+            height: 285px;
+        }
+        div{
+            h3{
+                font-size: 22px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    .noticias-intro{
+        div{
+            width: 95%;
+        }
+    }
+}
+
+@media screen and (max-width:750px){
+    header{
+        flex-direction: column;
+        height: auto;
+    }
+    .hero{
+        div{
+            .index-primer-texto{
+                font-size: 13px;
+                padding: 7px 0 14px 0;
+            }
+            h2{
+                font-size: 40px;
+            }
+            .index-segundo-texto{
+                font-size: 13px;
+                padding: 14px 0 7px 0;
+            }
+        }
+    }
+    .valores{
+        h2{
+            font-size: nth($size, 1);
+            margin-left: 30px;
+            }
+    }
+    .destacados{
+        h2{
+            font-size: nth($size, 1);
+            margin-left: 30px;
+        }
+    }
+    .portfolio{
+        img{
+            height: 270px;
+        }
+        div{
+            h3{
+                font-size: nth($size, 3);
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+    .servicios-intro{
+        div{
+            width: 95%;
+            padding: 5px;
+            h2{
+                font-size: 60px;
+            }
+            p{
+                font-size: nth($size, 4);
+            }
+        }
+    }
+    .noticias-intro{
+        div{
+            h2{
+                font-size: 60px;
+            }
+            p{
+                font-size: nth($size, 4);
+            }
+        }
+    }
+    .noticias{
+        h2{
+            font-size: nth($size, 1);
+            margin-left: 30px;
+        }
+        .noticias-caja{
+            .noticia-pri{
+                div{
+                    img{
+                        height: 250px;
+                    }
+                    h3{
+                        font-size: 25px;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+            .noticia-sec{
+                div{
+                    img{
+                        height: 250px;
+                    }
+                    h3{
+                        font-size: 25px;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+            .noticia-ter{
+                div{
+                    img{
+                        height: 250px;
+                    }
+                    h3{
+                        font-size: 25px;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+            .noticia-cua{
+                div{
+                    img{
+                        height: 250px;
+                    }
+                    h3{
+                        font-size: 25px;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .nosotros-intro{
+        div{
+            width: 95%;
+        }
+    }
+    .nosotros-equipos{
+        .los-equipos{
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+    }
+    .contactanos-intro{
+        div{
+            width: 95%;
+        }
+    }
+    .seccion-formulario{
+        .formulario{
+            flex-direction: column-reverse;
+            padding: 0 20px 50px;
+            img{
+                height: 270px;
+                width: 100%;
+                object-fit: cover;
+                padding-left: 0;
+                padding-bottom: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:635px){
+    .portfolio{
+        flex-direction: column;
+        img{
+            height: 330px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        div{
+            h3{
+                font-size: 23px;
+            }
+            p{
+                font-size: nth($size, 5);
+            }
+        }
+    }
+    .equipo{
+        padding: 30px 5px;
+        div{
+            h2{
+                font-size: nth($size, 1);
+            }
+            p{
+                font-size: nth($size, 4);
+            }
+        }
+        div{
+            h3{
+                font-size: 25px;
+            }
+        }
+    }
+    .servicios-intro{
+        div{
+            h2{
+                font-size: 50px;
+                text-align: center;
+            }
+            p{
+                font-size: nth($size, 5);
+            }
+        }
+    }
+    .aspecto-servicios{
+        flex-direction: column;
+        img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        div{
+            padding: 15px 0;
+        }
+    }
+    .propuesta-nueva{
+        background-color: white;
+        height: auto;
+        padding: 20px 5px;
+        p{
+            font-size: 17px;
+            color: black;
+            font-weight: bold;
+        }
+    }
+    .noticias-intro{
+        div{
+            h2{
+                font-size: 50px;
+                text-align: center;
+            }
+            p{
+                font-size: nth($size, 5);
+            }
+        }
+    }
+    .nosotros-intro{
+        div{
+            h2{
+                font-size: 50px;
+                text-align: center;
+            }
+            p{
+                font-size: nth($size, 5);
+            }
+        }
+    }
+    .historia{
+        h2{
+            font-size: nth($size, 1);
+            margin: 0;
+            text-align: center;
+        }
+        .texto-historia{
+            p{
+                font-size: nth($size, 4);
+                padding: 10px 30px;
+            }
+        }
+    }
+    .mision{
+        h3{
+            font-size: nth($size, 3);
+        }
+        p{
+            font-size: 23px;
+            width: 100%;
+            margin: 0;
+            padding: 0 30px;
+        }
+    }
+    .nosotros-equipos{
+        h2{
+            font-size: 45px;
+            margin-left: 50px;
+        }
+        .los-equipos-sumate{
+            flex-direction: column;
+            h3{
+                margin-bottom: 15px;
+                text-align: center;
+            }
+        }
+    }
+    .seccion-formulario{
+        h2{
+            font-size: nth($size, 1);
+            margin: 0;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:525px){
+    .equipo{
+        div{
+            h2{
+                margin-left: 30px;
+            }
+            p{
+                width: 97%;
+            }
+        }
+    }
+    footer{
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
+        div{
+            width: 120px;
+            padding-top: 5px;
+            a{
+                img{
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+        }
+    }
+    .propuesta-nueva{
+        p{
+            font-size: 15px;
+        }
+    }
+    .noticias{
+        h2{
+            margin: 0;
+            text-align: center;
+        }
+        .noticias-caja{
+            .noticia-pri{
+                div{
+                    flex-direction: column;
+                    img{
+                        width: 100%;
+                    }
+                    h3{
+                        width: 100%;
+                        padding: 15px 20px;
+                    }
+                }
+            }
+            .noticia-sec{
+                div{
+                    flex-direction: column;
+                    img{
+                        width: 100%;
+                    }
+                    h3{
+                        width: 100%;
+                        padding: 15px 20px;
+                    }
+                }
+            }
+            .noticia-ter{
+                div{
+                    flex-direction: column;
+                    img{
+                        width: 100%;
+                    }
+                    h3{
+                        width: 100%;
+                        padding: 15px 20px;
+                    }
+                }
+            }
+            .noticia-cua{
+                div{
+                    flex-direction: column;
+                    img{
+                        width: 100%;
+                    }
+                    h3{
+                        width: 100%;
+                        padding: 15px 20px;
+                    }
+                }
+            }
+        }
+    }
+    .newsletter{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 20px;
+        div{
+            width: 100%;
+            padding: 0 0 10px 0;
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    .nosotros-equipos{
+        h2{
+            font-size: nth($size, 1);
+            margin: 0;
+            text-align: center;
+        }
+        p{
+            font-size: nth($size, 4);
+            width: 90%;
+            text-align: center;
+        }
+        .los-equipos-sumate{
+            h3{
+                padding: 10px;
+            }
+        }   
+    }
+    .contactanos-intro{
+        div{
+            h2{
+                font-size: 48px;
+                text-align: center;
+            }
+            p{
+                font-size: nth($size, 5);
+            }
+        }
+    }
+    .oficina{
+        h2{
+            font-size: nth($size, 1);
+            margin: 0;
+            text-align: center;
+        }
+        p{
+            font-size: nth($size, 4);
+            width: 90%;
+            text-align: center;
+        }
+        div{
+            div{
+                text-align: center;
+                h3{
+                    font-size: 28px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px){
+    header{
+        h1{
+            font-size: nth($size, 1);
+        }
+        nav{
+            ul{
+                font-size: nth($size, 5);
+            }
+        }
+    }
+    .hero{
+        div{
+            h2{
+                font-size: nth($size, 2);
+            }
+        }
+    }
+    .valores{
+        .grid-container{
+            gap: 20px;
+            div{
+                width: 300px;
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+                h3{
+                    margin: 15px 0 10px 0;
+                    font-size: 25px;
+                    text-decoration: underline;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .destacados{
+        .destacados-padre{
+            .destacados-sd{
+                width: 300px;
+                height: 200px;
+                a{
+                    font-size: 23px;
+                }
+            }
+            .destacados-gd{
+                width: 300px;
+                height: 200px;
+                a{
+                    font-size: 23px;
+                }
+            }
+            .destacados-da{
+                width: 300px;
+                height: 200px;
+                a{
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+    .portfolio{
+        img{
+            height: 240px;
+        }
+        div{
+            h3{
+                font-size: nth($size, 3);
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+    .nosotros-equipos{
+        .los-equipos{
+            div{
+                margin: 10px;
+                padding: 10px;
+                font-size: 25px;
+            }
+        }
+    }
+}

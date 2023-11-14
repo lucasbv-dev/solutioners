@@ -687,6 +687,7 @@ footer h2{
 footer div{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 170px;
 }
 footer div a img{
@@ -738,7 +739,6 @@ footer div a img:hover{
     .mision{
         height: auto;
     }
-
     .los-equipos{
         flex-wrap: wrap;
     }
@@ -830,38 +830,6 @@ footer div a img:hover{
     .formulario img{
         height: 400px;
     }
-
-    .oficina div{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        border: solid 1.5px black;
-    }
-    .oficina div iframe{
-        padding: 20px 0;
-    }
-    .oficina div div{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        width: 50%;
-        padding: 5px;
-    }
-    .oficina div div h3{
-        font-size: 35px;
-        padding: 10px;
-        margin: 0;
-        font-weight: bold;
-        text-decoration: underline;
-    }
-    .oficina div div p{
-        color: white;
-        font-size: 18px;
-        margin: 0;
-        padding: 5px 10px;
-    }
-
     .oficina div{
         flex-direction: column-reverse;
     }
@@ -1130,7 +1098,6 @@ footer div a img:hover{
         flex-direction: column;
     }
     .los-equipos-sumate h3{
-        font-size: 25px;
         margin-bottom: 15px;
         text-align: center;
     }
