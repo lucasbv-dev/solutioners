@@ -1,0 +1,232 @@
+// ------ INDEX ------
+
+.hero{
+    @extend %aspecto-bg-img;
+    @extend %seccion-inicial-doc;
+    background-image: url("../img/img-hero.jpg");
+    div{
+        @include flex (flex, center, center, column);
+        background-color: $color-sec;
+        color: $color-ter;
+        width: 800px;    
+        border: 5px solid rgb(22, 190, 179);
+        border-radius: 15px;
+        text-align: center;
+        padding: 15px;
+        .index-primer-texto{
+            font-size: nth($size, 3);
+            font-weight: bold;
+            padding: 10px 0 20px 0;
+            margin: 0;
+            line-height: normal;
+        }
+        h2{
+            color: $color-pri;
+            font-size: 55px;
+            font-weight: bold;
+            margin: 0;
+            line-height: normal;
+        }
+        .index-segundo-texto{
+            font-size: nth($size, 3);
+            padding: 20px 0 10px 0;
+            margin: 0;
+            line-height: normal;
+        }
+    }
+}
+
+.valores{
+    background-color: $color-sec;
+    h2{
+        color: $color-pri;
+        @extend %titulos-h2;
+    }
+    .grid-container{
+        height: 950px;
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        div{
+            background-color: rgb(22, 190, 179);
+            padding: 15px;
+            text-align: center;
+            border: 10px solid white;
+            border-radius: 30px;
+            height: 87%;
+            width: 90%;
+            transition: transform 0.5s ease;
+            &:hover{
+                transform: scale(1.05);
+            }
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            h3{
+                margin: 15px 0 10px 0;
+                font-size: nth($size, 2);
+                text-decoration: underline;
+                color: $color-sec;
+                font-weight: bold;
+                line-height: normal;
+            }
+            p{
+                font-size: nth($size, 3);
+                color: $color-sec;
+                margin: 0;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+.destacados{
+    background-color: $color-sec;
+    height: 550px;
+    h2{
+        color: $color-pri;
+        @extend %titulos-h2;
+    }
+    .destacados-padre{
+        @include flex (flex, space-evenly, center, row);
+        padding: 20px 0;
+        .destacados-sd{
+            @extend %aspecto-bg-img;
+            background-image: url("../img/services-sd.jpg");
+            width: 350px;
+            height: 250px;
+            @include flex (flex, center, center, row);
+            border: 2px solid white;
+            border-radius: 15px;
+            a{
+                background-color: $color-sec;
+                color: $color-ter;
+                font-size: nth($size, 2);
+                text-decoration: none;
+                padding: 3px;
+                border: 1px solid black;
+                border-radius: 15px;
+                transition: color 0.3s ease-out;
+                &:hover{
+                    color: $color-pri;
+                }
+            }
+        }
+        .destacados-gd{
+            @extend %aspecto-bg-img;
+            background-image: url("../img/services-gd.jpg");
+            width: 350px;
+            height: 250px;
+            @include flex (flex, center, center, row);
+            border: 2px solid white;
+            border-radius: 15px;
+            a{
+                background-color: $color-sec;
+                color: $color-ter;
+                font-size: nth($size, 2);
+                text-decoration: none;
+                padding: 3px;
+                border: 1px solid black;
+                border-radius: 15px;
+                transition: color 0.3s ease-out;
+                &:hover{
+                    color: $color-pri;
+                }
+            }
+        }
+        .destacados-da{
+            @extend %aspecto-bg-img;
+            background-image: url("../img/services-da.jpg");
+            width: 350px;
+            height: 250px;
+            @include flex (flex, center, center, row);
+            border: 2px solid white;
+            border-radius: 15px;
+            a{
+                background-color: $color-sec;
+                color: $color-ter;
+                font-size: nth($size, 2);
+                text-decoration: none;
+                padding: 3px;
+                border: 1px solid black;
+                border-radius: 15px;
+                transition: color 0.3s ease-out;
+                &:hover{
+                    color: $color-pri;
+                }
+            }
+        }
+    }
+}
+
+.portfolio{
+    @include flex (flex, center, center, row);
+    background-color: $color-cua;
+    margin-bottom: 0;
+    img{
+        height: 450px;
+        width: 50%;
+    }
+    div{
+        h3{
+            color: $color-pri;
+            font-size: nth($size, 2);
+            padding: 0 15px 10px 20px;
+            margin-bottom: 0;
+            font-weight: bold;
+            line-height: normal;
+        }
+        p{
+            color: $color-ter;
+            font-size: nth($size, 3);
+            padding: 0 15px 10px 20px;
+            margin-bottom: 0;
+            line-height: normal;
+        }
+    }
+}
+
+.equipo{
+    background-color: $color-sec;
+    @include flex (flex, center, center, row);
+    height: 400px;
+    div{
+        @include flex (flex, center, center, column);
+        padding: 0 5px;
+        h2{
+            color: $color-pri;
+            font-size: 50px;
+            font-weight: bold;
+            line-height: normal;
+            margin: 0;
+        }
+        p{
+            color: $color-ter;
+            font-size: nth($size, 3);
+            word-wrap: break-word;
+            width: 500px;
+            padding: 10px;
+            text-align: center;
+            line-height: normal;
+            margin: 0;
+        }
+    }
+    div{
+        @include flex (flex, center, center, column);
+        padding: 0 5px;
+        h3{
+            color: $color-pri;
+            font-size: nth($size, 1);
+            padding: 20px;
+            line-height: normal;
+            margin: 0;
+        }
+        a{
+            @extend %aspecto-boton;
+        }
+    }
+}

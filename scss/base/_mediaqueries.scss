@@ -319,6 +319,7 @@
     header{
         flex-direction: column;
         height: auto;
+        padding: 10px 0;
     }
     .hero{
         div{
@@ -529,13 +530,12 @@
         }
     }
     .propuesta-nueva{
-        background-color: white;
         height: auto;
-        padding: 20px 5px;
+        padding: 40px 5px;
+        border-top: solid 1.5px $color-ter;
+        border-bottom: solid 1.5px $color-ter;
         p{
             font-size: 17px;
-            color: black;
-            font-weight: bold;
         }
     }
     .noticias-intro{
@@ -620,10 +620,10 @@
     footer{
         height: auto;
         flex-direction: column;
-        padding: 10px 0;
+        padding: 10px 0 15px 0;
         div{
             width: 120px;
-            padding-top: 5px;
+            padding-top: 10px;
             a{
                 img{
                     height: 25px;

@@ -1,0 +1,122 @@
+// ------ CONTÁCTANOS ------
+
+.contactanos-intro{
+    @extend %aspecto-bg-img;
+    @extend %seccion-inicial-doc;
+    background-image: url("../img/img-contactanos.jpg");
+    div{
+        background-color: $color-sec;
+        @include flex (flex, center, center, column);
+        width: 75%;
+        margin: 0 auto;
+        border: 5px solid rgb(22, 190, 179);
+        border-radius: 15px;
+        padding: 15px 0;
+        h2{
+            color: $color-pri;
+            font-size: 70px;
+            font-weight: bold;
+            margin: 15px;
+            padding: 5px;
+            border: 2px dashed white;
+            border-radius: 15px;
+            line-height: normal;
+        }
+        p{
+            color: $color-ter;
+            font-size: nth($size, 3);
+            padding: 15px 25px;
+            text-align: center;
+            line-height: normal;
+            margin: 0;
+        }
+    }
+}
+
+.seccion-formulario{
+    background-color: $color-sec;
+    h2{
+        color: $color-pri;
+        @extend %titulos-h2;
+    }
+    .formulario{
+        @include flex (flex, space-between, center, row);
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 50px 0;
+        form{
+            div{
+                label{
+                    color: $color-pri;
+                }
+            }
+            div{
+                button{
+                    @extend %aspecto-boton;
+                    width: auto;
+                    &:hover{
+                        background-color: rgb(22, 190, 179);
+                    }
+                }
+            }
+        }
+        img{
+            height: 450px;
+            width: auto;
+            padding-left: 15px;
+        }
+    }
+}
+
+.oficina{
+    background-color: $color-cua;
+    h2{
+        color: $color-pri;
+        @extend %titulos-h2;
+    }
+    p{
+        color: $color-ter;
+        font-size: nth($size, 3);
+        width: 85%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    div{
+        @include flex (flex, space-evenly, center, row);
+        border: solid 1.5px black;
+        border-radius: 15px;
+        iframe{
+            padding: 20px 0;
+        }
+        div{
+            @include flex (flex, space-evenly, center, column);
+            width: 50%;
+            padding: 5px;
+            transition: border 0.5s ease;
+            &:hover{
+                border: solid 1.5px $color-ter;
+            }
+            h3{
+                color: $color-pri;
+                font-size: nth($size, 1);
+                padding: 10px;
+                margin: 0;
+                text-decoration: underline;
+            }
+            p{
+                color: $color-ter;
+                font-size: nth($size, 4);
+                margin: 0;
+                padding: 5px 10px;
+            }
+        }
+    }
+}
+
+.final-contactanos{
+    img{
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+}

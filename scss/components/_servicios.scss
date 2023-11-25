@@ -1,0 +1,188 @@
+// ------ SERVICIOS ------
+
+.servicios-intro{
+    @extend %aspecto-bg-img;
+    @extend %seccion-inicial-doc;
+    background-image: url("../img/img-servicios.jpg");
+    div{
+        background-color: $color-sec;
+        @include flex (flex, center, center, column);
+        width: 725px;
+        border: 5px solid rgb(22, 190, 179);
+        border-radius: 15px;
+        padding: 15px 0;
+        h2{
+            color: $color-pri;
+            font-size: 70px;
+            font-weight: bold;
+            margin: 15px;
+            padding: 5px;
+            border: 2px dashed white;
+            border-radius: 15px;
+            line-height: normal;
+        }
+        p{
+            color: $color-ter;
+            font-size: nth($size, 3);
+            padding: 15px 25px;
+            text-align: center;
+            line-height: normal;
+            margin: 0;
+        }
+    }
+}
+
+.servicios-sd{
+    @extend %aspecto-servicios;
+    img{
+        height: 450px;
+        width: 50%;
+    }
+    div{
+        text-align: center;
+        h3{
+            color: $color-pri;
+            font-size: nth($size, 1);
+            padding: 10px;
+            text-decoration: underline;
+            font-weight: bold;
+            line-height: normal;
+            margin: 0;
+        }
+        p{
+            color: $color-ter;
+            font-size: nth($size, 3);
+            padding: 10px;
+            line-height: normal;
+            margin: 0;
+        }
+    }
+}
+
+.servicios-cs{
+    @extend %aspecto-servicios;
+    flex-direction: row-reverse;
+    img{
+        height: 450px;
+        width: 50%;
+    }
+    div{
+        text-align: center;
+        h3{
+            color: $color-pri;
+            font-size: nth($size, 1);
+            padding: 10px;
+            text-decoration: underline;
+            font-weight: bold;
+            line-height: normal;
+            margin: 0;
+        }
+        p{
+            color: $color-ter;
+            font-size: nth($size, 3);
+            padding: 10px;
+            line-height: normal;
+            margin: 0;
+        }
+    }
+}
+
+.servicios-gd{
+    @extend %aspecto-servicios;
+    img{
+        height: 450px;
+        width: 50%;
+    }
+    div{
+        text-align: center;
+        h3{
+            color: $color-pri;
+            font-size: nth($size, 1);
+            padding: 10px;
+            text-decoration: underline;
+            font-weight: bold;
+            line-height: normal;
+            margin: 0;
+        }
+        p{
+            color: $color-ter;
+            font-size: nth($size, 3);
+            padding: 10px;
+            line-height: normal;
+            margin: 0;
+        }
+    }
+}
+
+.servicios-sre{
+    @extend %aspecto-servicios;
+    flex-direction: row-reverse;
+    img{
+        height: 450px;
+        width: 50%;
+    }
+    div{
+        text-align: center;
+        h3{
+            color: $color-pri;
+            font-size: nth($size, 1);
+            padding: 10px;
+            text-decoration: underline;
+            font-weight: bold;
+            line-height: normal;
+            margin: 0;
+        }
+        p{
+            color: $color-ter;
+            font-size: nth($size, 3);
+            padding: 10px;
+            line-height: normal;
+            margin: 0;
+        }
+    }
+}
+
+.servicios-da{
+    @extend %aspecto-servicios;
+    img{
+        height: 450px;
+        width: 50%;
+    }
+    div{
+        text-align: center;
+        h3{
+            color: $color-pri;
+            font-size: nth($size, 1);
+            padding: 10px;
+            text-decoration: underline;
+            font-weight: bold;
+            line-height: normal;
+            margin: 0;
+        }
+        p{
+            color: $color-ter;
+            font-size: nth($size, 3);
+            padding: 10px;
+            line-height: normal;
+            margin: 0;
+        }
+    }
+}
+
+.propuesta-nueva{
+    background-color: $color-sec;
+    @include flex (flex, center, center, column);
+    height: 300px;
+    p{
+        color: $color-ter;
+        font-size: 23px;
+        text-align: center;
+        padding: 0 20px 15px 20px;
+        line-height: normal;
+        margin: 0;
+    }
+    a{
+        @extend %aspecto-boton;
+        margin-top: 10px;
+    }
+}

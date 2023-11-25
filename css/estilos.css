@@ -41,8 +41,7 @@
   align-items: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: black;
-  transition: border 0.2s linear; }
+  background-color: black; }
   .servicios-sd:hover, .servicios-cs:hover, .servicios-gd:hover, .servicios-sre:hover, .servicios-da:hover {
     border: solid 1.5px white; }
 
@@ -142,7 +141,7 @@ header {
       border-radius: 30px;
       height: 87%;
       width: 90%;
-      transition: 1s ease; }
+      transition: transform 0.5s ease; }
       .valores .grid-container div:hover {
         transform: scale(1.05); }
       .valores .grid-container div img {
@@ -189,7 +188,10 @@ header {
         text-decoration: none;
         padding: 3px;
         border: 1px solid black;
-        border-radius: 15px; }
+        border-radius: 15px;
+        transition: color 0.3s ease-out; }
+        .destacados .destacados-padre .destacados-sd a:hover {
+          color: #16beb3; }
     .destacados .destacados-padre .destacados-gd {
       background-image: url("../img/services-gd.jpg");
       width: 350px;
@@ -207,7 +209,10 @@ header {
         text-decoration: none;
         padding: 3px;
         border: 1px solid black;
-        border-radius: 15px; }
+        border-radius: 15px;
+        transition: color 0.3s ease-out; }
+        .destacados .destacados-padre .destacados-gd a:hover {
+          color: #16beb3; }
     .destacados .destacados-padre .destacados-da {
       background-image: url("../img/services-da.jpg");
       width: 350px;
@@ -225,7 +230,10 @@ header {
         text-decoration: none;
         padding: 3px;
         border: 1px solid black;
-        border-radius: 15px; }
+        border-radius: 15px;
+        transition: color 0.3s ease-out; }
+        .destacados .destacados-padre .destacados-da a:hover {
+          color: #16beb3; }
 
 .portfolio {
   display: flex;
@@ -443,7 +451,7 @@ header {
     line-height: normal;
     margin: 0; }
   .propuesta-nueva a {
-    margin-top: 15px; }
+    margin-top: 10px; }
 
 .noticias-intro {
   background-image: url("../img/img-noticias.jpg"); }
@@ -720,7 +728,10 @@ header {
       padding: 15px;
       background-color: #16beb3;
       border: 1px solid #16beb3;
-      border-radius: 50px; }
+      border-radius: 50px;
+      transition: transform 0.5s ease; }
+      .nosotros-equipos .los-equipos div:hover {
+        transform: scale(1.05); }
   .nosotros-equipos .los-equipos-sumate {
     display: flex;
     justify-content: center;
@@ -804,7 +815,8 @@ header {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    border: solid 1.5px black; }
+    border: solid 1.5px black;
+    border-radius: 15px; }
     .oficina div iframe {
       padding: 20px 0; }
     .oficina div div {
@@ -813,7 +825,10 @@ header {
       align-items: center;
       flex-direction: column;
       width: 50%;
-      padding: 5px; }
+      padding: 5px;
+      transition: border 0.5s ease; }
+      .oficina div div:hover {
+        border: solid 1.5px white; }
       .oficina div div h3 {
         color: #16beb3;
         font-size: 35px;
@@ -1025,7 +1040,8 @@ footer {
 @media screen and (max-width: 750px) {
   header {
     flex-direction: column;
-    height: auto; }
+    height: auto;
+    padding: 10px 0; }
   .hero div .index-primer-texto {
     font-size: 13px;
     padding: 7px 0 14px 0; }
@@ -1134,13 +1150,12 @@ footer {
     .aspecto-servicios div {
       padding: 15px 0; }
   .propuesta-nueva {
-    background-color: white;
     height: auto;
-    padding: 20px 5px; }
+    padding: 40px 5px;
+    border-top: solid 1.5px white;
+    border-bottom: solid 1.5px white; }
     .propuesta-nueva p {
-      font-size: 17px;
-      color: black;
-      font-weight: bold; }
+      font-size: 17px; }
   .noticias-intro div h2 {
     font-size: 50px;
     text-align: center; }
@@ -1186,10 +1201,10 @@ footer {
   footer {
     height: auto;
     flex-direction: column;
-    padding: 10px 0; }
+    padding: 10px 0 15px 0; }
     footer div {
       width: 120px;
-      padding-top: 5px; }
+      padding-top: 10px; }
       footer div a img {
         height: 25px;
         width: 25px; }

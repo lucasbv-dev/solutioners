@@ -1,0 +1,123 @@
+// ------ NOSOTROS ------
+
+.nosotros-intro{
+    @extend %aspecto-bg-img;
+    @extend %seccion-inicial-doc;
+    background-image: url("../img/img-nosotros.jpg");
+    div{
+        background-color: $color-sec;
+        @include flex (flex, center, center, column);
+        width: 65%;
+        margin: 0 auto;
+        border: 5px solid rgb(22, 190, 179);
+        border-radius: 15px;
+        padding: 15px 0;
+        h2{
+            color: $color-pri;
+            font-size: 70px;
+            font-weight: bold;
+            margin: 15px;
+            padding: 5px;
+            border: 2px dashed white;
+            border-radius: 15px;
+            line-height: normal;
+        }
+        p{
+            color: $color-ter;
+            font-size: nth($size, 3);
+            padding: 15px 25px;
+            text-align: center;
+            line-height: normal;
+            margin: 0;
+        }
+    }
+}
+
+.historia{
+    background-color: $color-sec;
+    h2{
+        color: $color-pri;
+        @extend %titulos-h2;
+    }
+    div{
+        @include flex (flex, center, center, column);
+        padding-bottom: 40px;
+        p{
+            color: $color-ter;
+            font-size: nth($size, 3);
+            text-align: center;
+            padding: 15px 100px;
+            margin: 0;
+        }
+    }
+}
+
+.mision{
+    background-color: $color-sec;
+    @include flex (flex, center, center, column);
+    height: 250px;
+    background-color: $color-cua;
+    padding: 30px 0;
+    h3{
+        color: $color-pri;
+        font-size: 23px;
+        font-weight: bold;
+        padding-bottom: 15px;
+        margin: 0;
+        line-height: normal;
+    }
+    p{
+        color: $color-ter;
+        font-size: nth($size, 2);
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.nosotros-equipos{
+    background-color: $color-sec;
+    h2{
+        color: $color-pri;
+        @extend %titulos-h2;
+    }
+    p{
+        color: $color-ter;
+        font-size: nth($size, 3);
+        width: 80%;
+        margin: 0 auto;
+    }
+    .los-equipos{
+        @include flex (flex, space-evenly, center, row);
+        padding: 50px 0;
+        div{
+            color: $color-sec;
+            font-size: nth($size, 2);
+            font-weight: bold;
+            padding: 15px;
+            background-color: rgb(22, 190, 179);
+            border: 1px solid rgb(22, 190, 179);
+            border-radius: 50px;
+            transition: transform 0.5s ease;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+    .los-equipos-sumate{
+        @include flex (flex, center, center, row);
+        align-items: center;
+        padding-bottom: 40px;
+        h3{
+            color: $color-pri;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 0 40px;
+            margin: 0;
+            line-height: normal;
+        }
+        a{
+            @extend %aspecto-boton;
+        }
+    }
+}
